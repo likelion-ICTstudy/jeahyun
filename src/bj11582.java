@@ -13,6 +13,7 @@ public class bj11582 {
         }
         int memberNum = Integer.parseInt(br.readLine().trim());
 
+        // 핵심 로직
         int subN = n / memberNum;
 
         for (int i = 0; i < memberNum; i++) {
@@ -20,6 +21,7 @@ public class bj11582 {
             int end = start + subN;
             Collections.sort(points.subList(start,end));
         }
+        // 핵심 로직
 
         List<String> strList = new ArrayList<>();
         for (long p : points) {
